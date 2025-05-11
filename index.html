@@ -6,6 +6,7 @@
     <title>Ela Bayoudh - CV</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -34,8 +35,17 @@
         <div class="content">
             <img src="profile image.jpg" alt="Ela Bayoudh Profile Photo" class="profile-photo">
             <h1>Ela Bayoudh</h1>
+            <h3>Computer Engineering Student</h3>
             <p>I'm a first-year engineering student specializing in computer engineering, eager to deepen my focus in cloud computing and data engineering in an innovative environment that fosters technical growth and hands-on experience.</p>
-            <a href="Ela-Bayoudh-Resume.pdf" download="Ela_Bayoudh_CV.pdf" class="download-btn">Download My CV</a>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/ela-bayoudh-34976823b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/elabayoudh" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/ela-bayoudh01" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="button-group">
+                <a href="Ela-Bayoudh-Resume.pdf" download="Ela_Bayoudh_CV.pdf" class="download-btn">Download My CV</a>
+                <a href="#contact" class="hire-btn">Hire Me</a>
+            </div>
         </div>
     </section>
 
@@ -173,7 +183,6 @@
             <h2>My Projects</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <img src="https://via.placeholder.com/300x200?text=SportX" alt="SportX Project">
                     <h3>SportX Sports Management Platform</h3>
                     <p>Desktop and Web Application (01/2025 - Present)</p>
                     <ul>
@@ -184,7 +193,6 @@
                     </ul>
                 </div>
                 <div class="service-card">
-                    <img src="https://via.placeholder.com/300x200?text=Cloud+Platform" alt="Cloud Platform Project">
                     <h3>Cloud Platform for Confidential Accounting Documents</h3>
                     <p>(PFE) (2024)</p>
                     <ul>
@@ -194,7 +202,6 @@
                     </ul>
                 </div>
                 <div class="service-card">
-                    <img src="https://via.placeholder.com/300x200?text=Cinema+Booking" alt="Cinema Booking Project">
                     <h3>Online Cinema Booking Platform</h3>
                     <p>(Internship ProxymIT) (2023)</p>
                     <ul>
@@ -204,7 +211,6 @@
                     </ul>
                 </div>
                 <div class="service-card">
-                    <img src="https://via.placeholder.com/300x200?text=E-Learning" alt="E-Learning Project">
                     <h3>E-Learning Platform</h3>
                     <p>(2022)</p>
                     <ul>
@@ -334,39 +340,22 @@
         </div>
     </section>
 
-    <!-- Testimonials Section (Placeholder) -->
-    <section id="testimonials">
-        <div class="content">
-            <h2>What My Peers Say</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <p>"Ela is an exceptional team member with a strong grasp of technical concepts."</p>
-                    <h3>John D.</h3>
-                    <p>Peer at ESPRIM</p>
-                </div>
-                <div class="testimonial-card">
-                    <p>"Her leadership skills shone through during our hackathon project."</p>
-                    <h3>Sarah M.</h3>
-                    <p>Teammate at GreeNovation</p>
-                </div>
-                <div class="testimonial-card">
-                    <p>"Ela's dedication to learning and growth is inspiring."</p>
-                    <h3>Mark T.</h3>
-                    <p>Mentor at Proxym-IT</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact">
         <div class="content">
             <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:elapro01bayoudh@gmail.com">elapro01bayoudh@gmail.com</a></p>
-            <p>Phone: 29 203 089</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/ela-bayoudh-34976823b/">linkedin.com/in/ElaBayoudh</a></p>
-            <p>First account GitHub: <a href="https://github.com/elabayoudh">github.com/elabayoudh</a></p>
-            <p>Second account GitHub: <a href="https://github.com/ela-bayoudh01">github.com/ela-bayoudh01</a></p>
+            <div class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="button" class="send-btn">Send Message</button>
+            </div>
         </div>
     </section>
 
