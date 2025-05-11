@@ -12,18 +12,20 @@
     <!-- Navigation Bar -->
     <header>
         <div class="logo">Ela Bayoudh</div>
-        <nav class="nav-bar">
-            <a href="#home" class="nav-item active">Home</a>
-            <a href="#education" class="nav-item">Education</a>
-            <a href="#skills" class="nav-item">Skills</a>
-            <a href="#experience" class="nav-item">Experience</a>
-            <a href="#projects" class="nav-item">Projects</a>
-            <a href="#languages" class="nav-item">Languages</a>
-            <a href="#extracurricular" class="nav-item">Extracurricular</a>
-            <a href="#achievements" class="nav-item">Achievements</a>
-            <a href="#courses" class="nav-item">Courses</a>
-            <a href="#hobbies" class="nav-item">Hobbies</a>
-            <a href="#contact" class="nav-item">Contact</a>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="#extracurricular">Extracurricular</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
         <div class="hamburger">☰</div>
     </header>
@@ -37,7 +39,7 @@
             <p>I'm a first-year engineering student specializing in computer engineering, eager to deepen my focus in cloud computing and data engineering in an innovative environment that fosters technical growth and hands-on experience.</p>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/ela-bayoudh-34976823b/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/elabayoudh" target="_blank"><i class="fab fa-github"></i></a>
+                <!-- <a href="https://github.com/elabayoudh" target="_blank"><i class="fab fa-github"></i></a> -->
                 <a href="https://github.com/ela-bayoudh01" target="_blank"><i class="fab fa-github"></i></a>
             </div>
             <div class="button-group">
@@ -410,10 +412,6 @@
                 document.querySelector(targetId).scrollIntoView({
                     behavior: 'smooth'
                 });
-                // Remove active class from all nav items
-                document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
-                // Add active class to clicked item
-                link.classList.add('active');
                 // Close the nav on mobile after clicking a link
                 if (window.innerWidth <= 768) {
                     document.querySelector('nav').classList.remove('active');
