@@ -5,41 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ela Bayoudh - CV</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <header>
-        <div class="logo">Ela Bayoudh</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#languages">Languages</a></li>
-                <li><a href="#extracurricular">Extracurricular</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="hamburger">☰</div>
-    </header>
+    <!-- Hamburger Icon for Mobile -->
+    <div class="hamburger">☰</div>
+    <!-- Sidebar Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#extracurricular">Extracurricular</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <!-- Home Section -->
     <section id="home">
+        <img src="profile image.jpg" alt="Ela Bayoudh Profile Photo" class="profile-photo">
+        <h1>Ela Bayoudh</h1>
         <div class="content">
-            <img src="profile image.jpg" alt="Ela Bayoudh Profile Photo" class="profile-photo">
-            <h1>Ela Bayoudh</h1>
-            <p>I'm a first-year engineering student specializing in computer engineering, eager to deepen my focus in cloud computing and data engineering in an innovative environment that fosters technical growth and hands-on experience.</p>
-            <a href="Ela-Bayoudh-Resume.pdf" download="Ela_Bayoudh_CV.pdf" class="download-btn">Download My CV</a>
+            <h2>Profile</h2>
+            <div class="card">
+                <p>I'm a first-year engineering student specializing in computer engineering, eager to deepen my focus in cloud computing and data engineering in an innovative environment that fosters technical growth and hands-on experience.</p>
+                <a href="Ela-Bayoudh-Resume.pdf" download="Ela_Bayoudh_CV.pdf" class="download-btn">Download My CV (PDF)</a>
+            </div>
         </div>
     </section>
 
-    <!-- Education Section -->
     <section id="education">
         <div class="content">
             <h2>Education</h2>
@@ -61,76 +59,31 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills">
         <div class="content">
-            <h2>My Skills</h2>
-            <div class="skills-grid">
-                <div class="skill">
-                    <p>HTML, CSS</p>
-                    <div class="progress-bar"><div style="width: 90%;"></div></div>
-                </div>
-                <div class="skill">
-                    <p>Java, JavaFX</p>
-                    <div class="progress-bar"><div style="width: 85%;"></div></div>
-                </div>
-                <div class="skill">
-                    <p>PHP</p>
-                    <div class="progress-bar"><div style="width: 80%;"></div></div>
-                </div>
-                <div class="skill">
-                    <p>Symfony</p>
-                    <div class="progress-bar"><div style="width: 75%;"></div></div>
-                </div>
-                <div class="skill">
-                    <p>JavaScript</p>
-                    <div class="progress-bar"><div style="width: 85%;"></div></div>
-                </div>
-                <div class="skill">
-                    <p>Nest.js</p>
-                    <div class="progress-bar"><div style="width: 80%;"></div></div>
-                </div>
-                <div class="skill">
-                    <p>Next.js</p>
-                    <div class="progress-bar"><div style="width: 80%;"></div></div>
-                </div>
-                <div class="skill">
-                    <p>Node.js</p>
-                    <div class="progress-bar"><div style="width: 85%;"></div></div>
-                </div>
-                <div class="skill">
-                    <p>Python</p>
-                    <div class="progress-bar"><div style="width: 80%;"></div></div>
-                </div>
-                <div class="skill">
-                    <p>MySQL</p>
-                    <div class="progress-bar"><div style="width: 85%;"></div></div>
-                </div>
-                <div class="skill">
-                    <p>Git</p>
-                    <div class="progress-bar"><div style="width: 90%;"></div></div>
-                </div>
-                <div class="skill">
-                    <p>Docker</p>
-                    <div class="progress-bar"><div style="width: 75%;"></div></div>
-                </div>
-                <div class="skill">
-                    <p>Team Collaboration</p>
-                    <div class="progress-bar"><div style="width: 95%;"></div></div>
-                </div>
-                <div class="skill">
-                    <p>Problem-Solving</p>
-                    <div class="progress-bar"><div style="width: 90%;"></div></div>
-                </div>
-                <div class="skill">
-                    <p>Leadership</p>
-                    <div class="progress-bar"><div style="width: 90%;"></div></div>
+            <h2>Skills</h2>
+            <div class="card">
+                <div class="skills-grid">
+                    <div class="skill">HTML, CSS</div>
+                    <div class="skill">Java, JavaFX</div>
+                    <div class="skill">PHP</div>
+                    <div class="skill">Symfony</div>
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">Nest.js</div>
+                    <div class="skill">Next.js</div>
+                    <div class="skill">Node.js</div>
+                    <div class="skill">Python</div>
+                    <div class="skill">MySQL</div>
+                    <div class="skill">Git</div>
+                    <div class="skill">Docker</div>
+                    <div class="skill">Team Collaboration</div>
+                    <div class="skill">Problem-Solving</div>
+                    <div class="skill">Leadership</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience">
         <div class="content">
             <h2>Work Experience</h2>
@@ -144,6 +97,7 @@
                     <li>Developed using Next.js, Nest.js, and Flutter frameworks.</li>
                 </ul>
             </div>
+
             <div class="card">
                 <h3>Summer Internship</h3>
                 <p>Proxym-IT, Sousse, Tunisia</p>
@@ -154,6 +108,7 @@
                     <li>Focused on backend development, implementing REST API for user authentication, movie listing, and booking processes.</li>
                 </ul>
             </div>
+            
             <div class="card">
                 <h3>Summer Internship</h3>
                 <p>Sancella, Ksibet el Mediouni / Monastir</p>
@@ -167,14 +122,11 @@
         </div>
     </section>
 
-    <!-- Projects Section (Styled as Services) -->
     <section id="projects">
-    <div class="content">
-        <h2>My Projects</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>SportX Sports Management Platform</h3>
-                <p>Desktop and Web Application (01/2025 - Present)</p>
+        <div class="content">
+            <h2>Personal Projects</h2>
+            <div class="card">
+                <h3>SportX Sports Management Platform – Desktop and Web Application (01/2025 - Present)</h3>
                 <ul>
                     <li>Front-End: FXML, CSS, UI/UX</li>
                     <li>Databases: MySQL</li>
@@ -182,27 +134,27 @@
                     <li>Other: Team Collaboration, Full-Stack Development</li>
                 </ul>
             </div>
-            <div class="service-card">
-                <h3>Cloud Platform for Confidential Accounting Documents</h3>
-                <p>(PFE) (2024)</p>
+
+            <div class="card">
+                <h3>Design and Development of a Cloud Platform for the Sharing of Confidential Accounting Documents (PFE) (2024)</h3>
                 <ul>
                     <li>Front-End: NextJs, Tailwind CSS</li>
                     <li>Back-End: NestJs</li>
                     <li>Database: NoSQL (MongoDB)</li>
                 </ul>
             </div>
-            <div class="service-card">
-                <h3>Online Cinema Booking Platform</h3>
-                <p>(Internship ProxymIT) (2023)</p>
+
+            <div class="card">
+                <h3>Design and Development of an Online Cinema Booking Platform (Internship ProxymIT) (2023)</h3>
                 <ul>
                     <li>Front-End: HTML, CSS</li>
                     <li>Back-End: NodeJS/ExpressJS</li>
                     <li>Database: MySQL + ORM: Prisma</li>
                 </ul>
             </div>
-            <div class="service-card">
-                <h3>E-Learning Platform</h3>
-                <p>(2022)</p>
+            
+            <div class="card">
+                <h3>Design and Development of an E-Learning Platform (2022)</h3>
                 <ul>
                     <li>Front-End: HTML/CSS</li>
                     <li>Back-End: PHP</li>
@@ -211,52 +163,51 @@
                 </ul>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-    <!-- Languages Section -->
     <section id="languages">
         <div class="content">
             <h2>Languages</h2>
-            <div class="languages-grid">
-                <div class="language">
-                    <p>Arabic</p>
-                    <p>Native</p>
-                    <div class="language-level">
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
+            <div class="card">
+                <div class="languages-grid">
+                    <div class="language">
+                        <p>Arabic</p>
+                        <p>Native</p>
+                        <div class="language-level">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                        </div>
                     </div>
-                </div>
-                <div class="language">
-                    <p>French</p>
-                    <p>C1</p>
-                    <div class="language-level">
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot"></span>
+                    <div class="language">
+                        <p>French</p>
+                        <p>C1</p>
+                        <div class="language-level">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                        </div>
                     </div>
-                </div>
-                <div class="language">
-                    <p>English</p>
-                    <p>B2</p>
-                    <div class="language-level">
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
+                    <div class="language">
+                        <p>English</p>
+                        <p>B2</p>
+                        <div class="language-level">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Extracurricular Section -->
     <section id="extracurricular">
         <div class="content">
             <h2>Extracurricular Activities</h2>
@@ -274,14 +225,13 @@
             </div>
             <div class="card">
                 <h3>Team Member</h3>
-                <p>Club Sci Data (ESPRIM), Monastir</p>
+                <p> Club Sci Data (ESPRIM), Monastir</p>
                 <p>Nov 2024 - Present</p>
                 <p>Actively participate in club activities and initiatives - Engaged in multiple training sessions on Machine Learning and Cloud Computing to enhance technical skills.</p>
             </div>
         </div>
     </section>
 
-    <!-- Achievements Section -->
     <section id="achievements">
         <div class="content">
             <h2>Achievements</h2>
@@ -292,7 +242,6 @@
         </div>
     </section>
 
-    <!-- Courses Section -->
     <section id="courses">
         <div class="content">
             <h2>Courses</h2>
@@ -305,8 +254,9 @@
                     <li>Covered topics like model training, hyperparameter tuning, and evaluation.</li>
                 </ul>
             </div>
+
             <div class="card">
-                <h3>AI-900: Microsoft Azure AI Fundamentals - DataScientist.fr</h3>
+                <h3>AI-900: Microsoft Azure AI Fundamentals - DataScientist.fr </h3>
                 <p>April 2025</p>
                 <ul>
                     <li>Practice Exam & Preparation Video.</li>
@@ -316,61 +266,32 @@
         </div>
     </section>
 
-    <!-- Hobbies Section -->
     <section id="hobbies">
         <div class="content">
             <h2>Hobbies</h2>
-            <div class="hobbies-grid">
-                <div class="hobby">Sport</div>
-                <div class="hobby">Camping</div>
-                <div class="hobby">Robotics</div>
-                <div class="hobby">Learning Languages</div>
-                <div class="hobby">Community Involvement</div>
+            <div class="card">
+                <div class="hobbies-grid">
+                    <div class="hobby">Sport</div>
+                    <div class="hobby">Camping</div>
+                    <div class="hobby">Robotics</div>
+                    <div class="hobby">Learning Languages</div>
+                    <div class="hobby">Community Involvement</div>
+                </div>
             </div>
         </div>
     </section>
 
-    
-    <!-- Contact Section -->
     <section id="contact">
-        <div class="content">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:elapro01bayoudh@gmail.com">elapro01bayoudh@gmail.com</a></p>
-            <p>Phone: 29 203 089</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/ela-bayoudh-34976823b/">linkedin.com/in/ElaBayoudh</a></p>
-            <p>First account GitHub: <a href="https://github.com/elabayoudh">github.com/elabayoudh</a></p>
-            <p>Second account GitHub: <a href="https://github.com/ela-bayoudh01">github.com/ela-bayoudh01</a></p>
-        </div>
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:elapro01bayoudh@gmail.com">elapro01bayoudh@gmail.com</a></p>
+        <p>Phone: 29 203 089</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/ela-bayoudh-34976823b/">linkedin.com/in/ElaBayoudh</a></p>
+        <p>First account GitHub: <a href="https://github.com/elabayoudh">github.com/elabayoudh</a></p>
+        <p>Second account GitHub: <a href="https://github.com/ela-bayoudh01">github.com/ela-bayoudh01</a></p>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Ela Bayoudh</h3>
-                <p>Computer Engineering Student</p>
-            </div>
-            <div class="footer-section">
-                <h3>Navigation</h3>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p>Phone: 29 203 089</p>
-                <p>Email: elapro01bayoudh@gmail.com</p>
-            </div>
-            <div class="footer-section">
-                <h3>Social</h3>
-                <p><a href="https://www.linkedin.com/in/ela-bayoudh-34976823b/">LinkedIn</a></p>
-                <p><a href="https://github.com/elabayoudh">GitHub</a></p>
-            </div>
-        </div>
-        <p class="footer-bottom">© 2025 Ela Bayoudh. All rights reserved.</p>
+        <p>© 2025 Ela Bayoudh. All rights reserved.</p>
     </footer>
 
     <script>
@@ -396,14 +317,14 @@
                 document.querySelector(targetId).scrollIntoView({
                     behavior: 'smooth'
                 });
-                // Close the nav on mobile after clicking a link
+                // Close the sidebar on mobile after clicking a link
                 if (window.innerWidth <= 768) {
                     document.querySelector('nav').classList.remove('active');
                 }
             });
         });
 
-        // Toggle nav on mobile with hamburger icon
+        // Toggle sidebar on mobile with hamburger icon
         document.querySelector('.hamburger').addEventListener('click', () => {
             document.querySelector('nav').classList.toggle('active');
         });
