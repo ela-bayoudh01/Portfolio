@@ -10,21 +10,28 @@
     <!-- Hamburger Icon for Mobile -->
     <div class="hamburger">☰</div>
     <!-- Sidebar Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#languages">Languages</a></li>
-            <li><a href="#extracurricular">Extracurricular</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#courses">Courses</a></li>
-            <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- Modifiez votre navigation comme ceci -->
+<nav>
+    <div class="nav-header">
+        <img src="profile image.jpg" alt="Profile" class="nav-profile">
+        <h3>Ela Bayoudh</h3>
+    </div>
+    <ul>
+        <li><a href="#home" class="active"><i class="fas fa-home"></i> Accueil</a></li>
+        <li><a href="#education"><i class="fas fa-graduation-cap"></i> Formation</a></li>
+        <li><a href="#skills"><i class="fas fa-code"></i> Compétences</a></li>
+        <li><a href="#experience"><i class="fas fa-briefcase"></i> Expérience</a></li>
+        <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projets</a></li>
+        <li class="dropdown">
+            <a href="#"><i class="fas fa-ellipsis-h"></i> Plus</a>
+            <ul class="dropdown-menu">
+                <li><a href="#languages">Langues</a></li>
+                <li><a href="#achievements">Réalisations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
 
     <section id="home">
         <img src="profile image.jpg" alt="Ela Bayoudh Profile Photo" class="profile-photo">
@@ -295,39 +302,43 @@
     </footer>
 
     <script>
-        // Intersection Observer for scroll animations
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
+        // Mettez à jour votre script comme ceci
+document.addEventListener('DOMContentLoaded', function() {
+    // Highlight active section in nav
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav a');
+    
+    window.addEventListener('scroll', () => {
+        let current = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            
+            if (pageYOffset >= (sectionTop - 300)) {
+                current = section.getAttribute('id');
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    });
+    
+    // Smooth scroll for all links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
             });
-        }, { threshold: 0.1 });
-
-        // Observe all sections
-        document.querySelectorAll('section').forEach(section => {
-            observer.observe(section);
         });
-
-        // Smooth scroll for navigation links
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const targetId = link.getAttribute('href');
-                document.querySelector(targetId).scrollIntoView({
-                    behavior: 'smooth'
-                });
-                // Close the sidebar on mobile after clicking a link
-                if (window.innerWidth <= 768) {
-                    document.querySelector('nav').classList.remove('active');
-                }
-            });
-        });
-
-        // Toggle sidebar on mobile with hamburger icon
-        document.querySelector('.hamburger').addEventListener('click', () => {
-            document.querySelector('nav').classList.toggle('active');
-        });
+    });
+});
+       
     </script>
 </body>
 </html>

@@ -58,6 +58,51 @@ nav a:hover {
     color: var(--primary);
 }
 
+/* Ajoutez ces styles */
+.nav-header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav-profile {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid var(--secondary);
+}
+
+nav a i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+/* Style du menu déroulant */
+.dropdown-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding-left: 20px;
+}
+
+.dropdown:hover .dropdown-menu {
+    max-height: 300px;
+}
+
+/* Indicateur de section active */
+nav a.active {
+    background: var(--secondary);
+    color: white !important;
+}
+
+/* Animation fluide entre les sections */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Hamburger Menu Icon */
 .hamburger {
     display: none; /* Hidden on desktop */
